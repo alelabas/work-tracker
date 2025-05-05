@@ -1,3 +1,1 @@
-export const plugins = [
-    require('tailwindcss-scrollbar'),
-];
+export const plugins = [require('tailwindcss-scrollbar')];

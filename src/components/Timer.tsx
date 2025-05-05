@@ -127,7 +127,6 @@ export function Timer() {
                 </>
             )}
 
-
             {storedInput.length > 0 ? (
                 <>
                     <History storedInput={storedInput} handleDelete={handleDelete} />

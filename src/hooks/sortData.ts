@@ -11,7 +11,9 @@ export function useData() {
 
             // Agrupar tareas y sumar duraciones
             const groupedData = rawData.reduce((acc: TimerProps[], current) => {
-                const existingTask = acc.find((item) => item.activity.toLowerCase() === current.activity.toLowerCase());
+                const existingTask = acc.find(
+                    (item) => item.activity.toLowerCase() === current.activity.toLowerCase()
+                );
                 if (existingTask) {
                     existingTask.duration += current.duration;
                 } else {

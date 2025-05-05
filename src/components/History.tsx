@@ -10,7 +10,6 @@ interface Props {
 }
 
 export const History: React.FC<Props> = ({ storedInput, handleDelete }) => {
-
     const historyArray = storedInput.map((el, index) => {
         return (
             <div
@@ -32,11 +31,9 @@ export const History: React.FC<Props> = ({ storedInput, handleDelete }) => {
         );
     });
 
-    return( 
-        <ScrollArea className='h-62 rounded-md mt-10'>
-            <div className="p-2">
-                {historyArray.reverse()}
-            </div>
+    return (
+        <ScrollArea className="h-62 rounded-md mt-10">
+            <div className="p-2">{historyArray.reverse()}</div>
         </ScrollArea>
-    )
+    );
 };
